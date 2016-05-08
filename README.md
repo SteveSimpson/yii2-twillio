@@ -7,6 +7,8 @@ This fork is primarily for working with the production version of the Twilio SDK
 Installation
 ------------
 
+**I have not added this to packagist yet. Not sure if I'm going to maintain the changes or not.**
+
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 Either run
