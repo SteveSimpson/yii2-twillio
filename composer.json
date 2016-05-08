@@ -1,5 +1,5 @@
 {
-    "name": "ssimpson/yii2-twillio",
+    "name": "SteveSimpson/yii2-twillio",
     "description": "yii 2 twillio integration",
     "type": "yii2-extension",
     "keywords": ["yii2"," extension","twillio"," php"],
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ssimpson\\twillio\\": ""
+            "SteveSimpson\\twillio\\": ""
         }
     }
 }
