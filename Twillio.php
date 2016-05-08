@@ -3,7 +3,7 @@
  * @author Bryan Tan <bryantan16@gmail.com>
  */
 
-namespace bryglen\twillio;
+namespace stevesimpson\twillio;
 
 use yii\base\Component;
 use yii\base\InvalidConfigException;
@@ -12,6 +12,8 @@ class Twillio extends Component
 {
     public $sid;
     public $token;
+    public $from;
+    public $area;
 
     private $_client = null;
     private $_clientCapability = null;

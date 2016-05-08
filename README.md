@@ -2,6 +2,8 @@ Yii 2 Twillio
 ===========================
 twillio for yii 2
 
+This fork is primarily for working with the production version of the Twilio SDK. But I'm adding a few things that I want.
+
 Installation
 ------------
 
@@ -10,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist bryglen/yii2-twillio "*"
+php composer.phar require --prefer-dist ssimpson/yii2-twillio "*"
 ```
 
 or add
 
 ```
-"bryglen/yii2-twillio": "*"
+"ssimpson/yii2-twillio": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -30,14 +32,16 @@ Once the extension is installed, you should configure it in the application conf
 ```php
 'components' => [
     'twillio' => [
-        'class' => 'bryglen\yii2-twillio\Twillio',
+        'class' => 'ssimpson\yii2-twillio\Twillio',
         'sid' => 'your_sid',
         'token' => 'your_token',
+        'from'  => 'your_number', // code can override, but set the default
+        'area'  => 'default_area_code', // ok this is so 80s but what can I say, it works for 80%
     ]
 ]
 ```
 
-** Creating a customer
+** Sending a simple message
 
 ```php
 $twillio = Yii::$app->twillio;
